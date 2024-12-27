@@ -1,0 +1,768 @@
+/* DEFAULT */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+main {
+  border: 10px solid white;
+}
+
+/* FONTS */
+.spanIntro {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #707070;
+    text-transform: uppercase;
+}
+.spanHeader {
+    font-size: 30px;
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+}
+.spanText {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";    
+  letter-spacing: 1px;
+  line-height: 1.2em;
+}
+
+
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.logoIndex {
+    height: 3em;
+    width: 4em;
+    margin-left: 1em;
+}
+.headerSeperate {
+    margin: 0 0 .5em .5em;
+    font-size: 2em;
+    color: rgb(68, 63, 63);
+}
+.headerIndexButton {
+  margin-left: 1em;
+  text-decoration: none;
+  margin-top: 0;
+}
+.hireMe {
+    margin: 0 1em 0 auto;
+    text-decoration: none;
+}
+.aboutBubbleButtonDesign {
+  appearance: button;
+  background-color: #8bc6ec;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: .5em;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 3px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1em 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+}
+.aboutBubbleButtonDesign:after {
+  background-clip: padding-box;
+  background-color: #0a3469; 
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.aboutBubbleButtonDesign,
+.aboutBubbleButtonDesign:focus {
+  user-select: auto;
+}
+.aboutBubbleButtonDesign:hover:not(:disabled) {
+  filter: brightness(1.6);
+  -webkit-filter: brightness(1.6);
+}
+.aboutBubbleButtonDesign:disabled {
+  cursor: auto;
+}
+.aboutBubbleButtonDesign:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+
+/* ABOUT ME */
+#aboutMe {
+  width: 100%;
+  height: auto;
+}
+.quoteWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: fit-content;
+}
+.aboutMeQuote {
+  height: auto;
+  width: 300px;
+  font-size: 1.75em;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+}
+.aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.aboutMePrompt {
+  width: 300px;
+  height: fit-content;
+  padding: 15px;
+  margin-bottom: 1em;
+}
+.aboutMeIntro {
+  height: fit-content;
+  margin-bottom: .5em;
+}
+.aboutMeHeader {
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.aboutMeText {
+  height: fit-content;
+  margin-bottom: 2.5em;
+}
+.aboutMeText-2 {
+  height: auto;
+  margin-bottom: 3em;
+}
+.aboutMeImg {
+  text-align: end;
+  width: 300px;
+  padding: 15px;
+}
+
+
+
+
+/* HARDSHIPS */
+.hardshipsWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.hardshipsPrompt {
+  width: 300px;
+  height: fit-content;
+  padding: 15px;
+  text-align: end;
+  margin-bottom: 1em;
+}
+.hardshipsIntro {
+  height: fit-content;
+  margin-bottom: .5em;
+}
+.hardshipsHeader {
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.hardshipsText {
+  height: fit-content;
+  margin-bottom: 2.5em;
+}
+.hardshipsText-2 {
+  height: auto;
+  margin-bottom: 3em;
+}
+.hardshipsImg {
+  text-align: end;
+  width: 300px;
+  padding: 15px;
+}
+.marcosImg {
+  
+}
+
+/* MINDSET */
+.mindsetWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+.mindsetPrompt {
+  width: 300px;
+  height: fit-content;
+  padding: 15px;
+  margin-bottom: 1em;
+}
+.mindsetIntro {
+  height: fit-content;
+  margin-bottom: .5em;
+}
+.mindsetHeader {
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.mindsetText {
+  height: fit-content;
+  margin-bottom: 2.5em;
+}
+.mindsetText-2 {
+  height: auto;
+  margin-bottom: 3em;
+}
+.mindsetImg {
+  text-align: end;
+  width: 300px;
+  padding: 15px;
+}
+.marcosImg {
+  
+}
+
+
+
+
+
+
+
+
+/* WHAT NOW */
+.whatNowWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.whatNowPrompt {
+  width: 300px;
+  height: fit-content;
+  padding: 15px;
+  text-align: end;
+}
+.whatNowIntro {
+  height: fit-content;
+  margin-bottom: .5em;
+}
+.whatNowHeader {
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.whatNowText {
+  height: fit-content;
+  margin-bottom: 2.5em;
+  
+}
+.whatNowText-2 {
+  height: auto;
+  margin-bottom: 3em;
+}
+.whatNowImg {
+  text-align: end;
+  width: 300px;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 830px) {
+  .logoIndex {
+      height: 4em;
+      width: 6em;
+      margin-left: 1em;
+  }
+  .headerSeperate {
+      margin: 0 0 .5em .5em;
+      font-size: 2.75em;
+      color: rgb(68, 63, 63);
+  }
+  .aboutBubbleButtonDesign {
+    appearance: button;
+    background-color: #8bc6ec;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: .75em;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 3px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1em 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  
+  }
+  .aboutMeWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: unset;
+    margin-bottom: 5em;
+  }
+  .aboutMePrompt {
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 1em;
+  }
+  .aboutMeQuote {
+    height: auto;
+    width: 600px;
+    font-size: 2.5em;
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+  }
+  .hardshipsWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: unset;
+    margin-bottom: 5em;
+  }
+  .hardshipsPrompt {
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+    text-align: end;
+    margin-bottom: 1em;
+  }
+  .hardshipsImg {
+    text-align: end;
+    width: 300px;
+    padding: 15px;
+    
+  }
+  .mindsetWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    flex-direction: row;
+    margin-bottom: 5em;
+  }
+  .mindsetPrompt {
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 1em;
+  }
+  .whatNowWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: unset;
+  }
+  .whatNowPrompt {
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+  }
+}
+
+@media  (min-width: 1200px) {
+  .spanText {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";    
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    font-size: 20px;
+  }
+  .aboutMeQuote {
+    height: auto;
+    width: 900px;
+    font-size: 2.5em;
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+  }
+  .aboutMePrompt {
+    width: 700px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 1em;
+  }
+  .aboutMeImg {
+    text-align: end;
+    width: 400px;
+  }
+  .hardshipsPrompt {
+    width: 700px;
+    height: fit-content;
+    padding: 15px;
+    text-align: end;
+    margin-bottom: 1em;
+  }
+  .hardshipsImg {
+    text-align: end;
+    width: 400px;
+    padding: 15px;
+  }
+  .mindsetPrompt {
+    width: 700px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 1em;
+  }
+  .mindsetImg {
+    text-align: end;
+    width: 400px;
+    padding: 15px;
+  }
+  .whatNowPrompt {
+    width: 700px;
+    height: fit-content;
+    padding: 15px;
+    text-align: end;
+  }
+  .whatNowImg {
+    text-align: end;
+    width: 400px;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Overlay Transition */
+#overlay {
+    position: absolute;
+    top: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8bc6ec;
+    border: 10px solid white;
+    z-index: 1000;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: fadeIn 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s backwards;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+#overlay.active {
+    display: block;
+    top: 0; /* Slide into view */
+    opacity: 1; /* Fade in */
+    pointer-events: auto;
+    visibility: visible;
+}
+
+
+/* Overlay Header */
+.overlayHeader {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+.logoOverlay {
+    height: 3em;
+    width: 4em;
+    margin-left: 1em;
+}
+.overlayDivider {
+    overflow: visible;
+    border: none;
+    border-top: medium double #0a3469;
+    color: #0a3469;
+    text-align: center;
+}
+.overlayDivider:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #8bc6ec;
+}
+
+
+/* Overlay Landing */
+.overlayLanding {
+    height: 100%;
+}
+/* Contact Links */
+.contactLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.contactLinksItems {
+    display: flex;
+}
+.contactLinks li {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.marcosContact {
+    margin-top: -25px;
+}
+
+
+/* Cool Menu animation for Overlay Menu */
+.overlayNav {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin-top: 2em;
+}
+.overlayNav li {
+  list-style: none;
+  text-align: center;
+  opacity: 1; /* Start with invisible items */
+  animation: none;
+}
+.overlayNav li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 15px;
+  
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.overlayNav:hover li a {
+  color: #0002;
+}
+.overlayNav li:hover a {
+  color: #000;
+  background: transparent;
+}
+.overlayNav li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+.overlayNav li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+  pointer-events: none;
+}
+
+
+/* Button Style For Overlay Menu Contact Links */
+.contactButtonOverlay {
+position: relative; 
+display: block;
+width: 60px;
+height: 60px;
+text-align: center;
+line-height: 63px;
+background: #8bc6ec;
+border-radius: 50%;
+font-size: 30px;
+color: #666;
+transition: .5s;
+border: 3px solid black;
+}
+.contactButtonOverlay::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: #0a3469;
+transition: .5s;
+transform: scale(.9);
+z-index: -1;
+}
+.contactButtonOverlay:hover::before {
+transform: scale(1.1);
+box-shadow: 0 0 15px #0a3469;
+}
+.contactButtonOverlay:hover {
+color: #0a3469;
+box-shadow: 0 0 5px #0a3469;
+text-shadow: 0 0 5px #0a3469;
+background-color: #d1e3f1;
+}
+
+
+/* Contact Buttons Design In Menu Page */
+.githubButton {
+  height: 35px;
+  width: 35px;
+  margin-top: 8px;
+}
+.emailButton {
+  height: 55px;
+  width: 55px;
+}
+.instaButton {
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+}
+.linkedinButton {
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+}
+
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(300px); /* Move from bottom */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Set back to original position */
+  }
+}
+
+
+.fadeInUp {
+ opacity: 1;
+ animation-name: fadeInUp;
+ animation-iteration-count: 1;
+ animation-timing-function: forwards;
+ animation-duration: 2s;
+}
+
+
+.fadeInDown {
+  opacity: 1;
+animation-name: fadeInDownOpacity;
+animation-iteration-count: 1;
+animation-timing-function: forwards;
+animation-duration: 2s;
+}
+@keyframes fadeInDownOpacity {
+  0% {
+     opacity: 0;
+     transform: translateY(-100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
